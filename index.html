@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>テスト用シンプルサイト</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">テストサイト</h1>
+      <nav>
+        <button id="themeToggle" class="btn small">ダーク切替</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>ようこそ — シンプルなテストページ</h2>
+        <p>これはテスト用途の簡易ホームページです。適当に作ってあります。</p>
+        <p><button id="cta" class="btn">クリックしてみる</button></p>
+      </div>
+    </section>
+
+    <section class="features container">
+      <article>
+        <h3>特徴</h3>
+        <ul>
+          <li>レスポンシブなレイアウト</li>
+          <li>簡単なJavaScriptの動作</li>
+          <li>テスト用に最小構成</li>
+        </ul>
+      </article>
+      <article>
+        <h3>連絡</h3>
+        <form id="contactForm">
+          <label>名前<br><input type="text" name="name" required></label>
+          <label>メール<br><input type="email" name="email" required></label>
+          <label>メッセージ<br><textarea name="message" rows="4" required></textarea></label>
+          <p><button type="submit" class="btn">送信（デモ）</button></p>
+        </form>
+        <p id="formResult" class="muted"></p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; テストサイト — 2025</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

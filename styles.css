@@ -1,0 +1,20 @@
+:root{--bg:#f7f9fc;--card:#ffffff;--text:#0b1720;--muted:#58606a;--accent:#2563eb}
+*{box-sizing:border-box}
+body{margin:0;font-family:Segoe UI,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+.container{max-width:1000px;margin:0 auto;padding:1rem}
+.site-header{background:linear-gradient(90deg,#fff,#f1f5f9);border-bottom:1px solid #e6edf3}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{margin:0;font-size:1.2rem}
+.hero{padding:3rem 0;text-align:center}
+.hero h2{margin:.2rem 0 0.5rem;font-size:1.6rem}
+.btn{background:var(--accent);color:#fff;padding:.6rem 1rem;border-radius:6px;border:none;cursor:pointer}
+.btn.small{padding:.3rem .6rem;font-size:.9rem}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:1rem;padding-bottom:2rem}
+.features article{background:var(--card);padding:1rem;border-radius:8px;box-shadow:0 1px 4px rgba(10,20,30,0.04)}
+label{display:block;margin-bottom:.6rem}
+input,textarea{width:100%;padding:.5rem;border:1px solid #d6dee6;border-radius:6px}
+.muted{color:var(--muted)}
+.site-footer{border-top:1px solid #e6edf3;padding:1rem 0;text-align:center}
+@media(max-width:700px){.features{grid-template-columns:1fr}.hero{padding:2rem 0}}
+/* ダークモード */
+body.dark{--bg:#0b1220;--card:#11151b;--text:#e6eef6;--muted:#9aa7b6;--accent:#1e90ff}
